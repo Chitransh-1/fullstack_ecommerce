@@ -1,38 +1,167 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@media (min-width: 1300px){
+    .container, .container-lg, .container-md, .container-sm, .container-x1 {
+        max-width: 1200px;
+    }
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+    margin: 0px;
+    padding: 0px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.bg-blue{background: #233a95;}
+.container{max-width: 90%;}
+.headerwrapper .top-strip{padding: 8px 0px;}
+
+.headerwrapper .top-strip p{
+    color: #efffff;
+    font-size: 12px;
+    font-weight: 500;
 }
 
-.App-link {
-  color: #61dafb;
+.headerwrapper .header{
+    width: 100%;
+    height: auto;
+    padding: 25px 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logowrapper img{width: 110%;}
+
+.headerwrapper .header .part2 .countryDrop{
+    width: 170px;
+    height: 60px;
+    min-width: 170px;
+    color: #000 !important;
+    border: 1px solid rgba(0, 0, 0, 0.2) !important;
+    border-radius: 7px !important;
+    padding: 10px 15px !important;
+    text-align: left;
+    justify-content: flex-start;
+}
+
+.headerwrapper .header .part2 .countryDrop .lable{
+    font-size: 12px !important;
+    text-transform: capitalize !important;
+    color: rgba(0, 0, 0, 0.5) !important;
+    line-height: 16px;
+}
+
+.headerwrapper .header .part2 .countryDrop .name{
+    font-size: 14px !important;
+    text-transform: capitalize !important;
+    color: #233a95 !important;
+    font-weight: 700;
+    line-height: 16px;
+}
+
+.headerwrapper .header .part2 .countryDrop span.ml-auto svg{opacity: 0.7;}
+
+header .headerSearch{
+    width: 60%;
+    height: 60px;
+    background: #f3f4f7;
+    padding: 5px;
+    position: relative;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+header .headerSearch input{
+    background: transparent !important;
+    outline: none !important;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 45px;
+    border: 0px !important;
+    padding: 0px 20px !important;
+}
+
+header .headerSearch input::-webkit-input-placeholder{color: rgba(0, 0, 0, 0.6);}
+
+header .headerSearch button{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    z-index: 100;
+    min-width: 40px !important;
+    height: 40px !important;
+    width: 40px !important;
+    border-radius: 50% !important;
+    color: #000 !important;
+}
+
+header .headerSearch button svg{font-size: 22px;}
+
+header .part3 .circle{
+    align-items: center;
+    justify-content: center;
+    min-width: 45px !important;
+    height: 45px !important;
+    width: 45px !important;
+    border-radius: 50% !important;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: #000;
+}
+
+header .part3 .circle svg{font-size: 22px;}
+
+.cartTab .price{
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 700;
+}
+
+.cartTab button{background: #fff1ee !important;}
+.cartTab button svg{color: #ea2b0f !important;}
+
+.cartTab .count{
+    position: absolute;
+    top: -6px;
+    right: -4px;
+    background: #ea2b0f;
+    border-radius: 50%;
+    color: #ffffff; 
+    width: 20px;
+    height: 20px;
+}
+
+nav .allCatTab{
+    background: #2bbef9;
+    padding: 10px 15px !important;
+    border-radius: 30px !important;
+}
+
+nav .allCatTab *{color: #ffffff;}
+nav .allCatTab:hover{background: #2bbef9;}
+nav .allCatTab .text{font-weight: 600;}
+
+nav .allCatTab .icon1 svg{font-size: 20px !important;}
+nav .allCatTab .icon2 svg{font-size: 15px !important;}
+
+nav .navPart2 ul{margin: 0px;}
+nav .navPart2 ul a{
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.8);
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    padding: 8px 15px;
+    transition: all 0.2s ease-in-out;
+    border-radius: 25px;
+}
+
+nav .navPart2 ul a svg{font-size: 20px;}
+
+nav .navPart2 ul a:hover{
+    background: #f0faff;
+    color: #2bbef9;
 }
