@@ -5,7 +5,7 @@
     .container-lg,
     .container-md,
     .container-sm,
-    .container-xl { /* Corrected 'container-x1' to 'container-xl' */
+    .container-xl {
         max-width: 1200px;
     }
 }
@@ -13,7 +13,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Added box-sizing for better sizing control */
+    box-sizing: border-box; 
 }
 
 body {
@@ -21,33 +21,22 @@ body {
     font-size: 14px;
 }
 
-.bg-blue {
-    background: #233a95;
-}
-
-.container {
-    max-width: 90%;
-}
-
-.headerwrapper .top-strip {
-    padding: 8px 0;
-}
-
+.bg-blue {background: #233a95;}
+.container {max-width: 90%;}
+.headerwrapper .top-strip {padding: 8px 0;}
 .headerwrapper .top-strip p {
     color: #efffff;
     font-size: 12px;
     font-weight: 500;
 }
 
-.headerwrapper .header {
+.headerwrapper .header{
     width: 100%;
     height: auto;
     padding: 25px 0;
 }
 
-.logowrapper img {
-    width: 110%;
-}
+.logowrapper img {width: 100%;}
 
 .headerwrapper .header .part2 .countryDrop {
     width: 170px;
@@ -58,10 +47,10 @@ body {
     border-radius: 7px !important;
     padding: 10px 15px !important;
     text-align: left;
-    justify-content: flex-start;
+    justify-content: flex-start !important;
 }
 
-.headerwrapper .header .part2 .countryDrop .label { /* Corrected 'lable' to 'label' */
+.headerwrapper .header .part2 .countryDrop .label {
     font-size: 12px !important;
     text-transform: capitalize !important;
     color: rgba(0, 0, 0, 0.5) !important;
@@ -97,7 +86,7 @@ header .headerSearch input {
     color: rgba(0, 0, 0, 0.7);
     width: 100%;
     height: 45px;
-    border: none !important;
+    border: 0px !important;
     padding: 0 20px !important;
 }
 

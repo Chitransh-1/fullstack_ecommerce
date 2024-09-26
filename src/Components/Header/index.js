@@ -20,8 +20,8 @@ const Header = () => {
                 <div className="container">
                     <div className="row">
                         <div className="logowrapper d-flex align-items-center col-sm-2">
-                            <Link to="/">
-                                <img src={Logo} alt="Logo" />
+                            <Link to={'/'}>
+                                <img src={Logo} alt="Logo"/>
                             </Link>
                         </div>
 
