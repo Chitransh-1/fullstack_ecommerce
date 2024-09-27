@@ -163,6 +163,8 @@ header .part3 .circle svg {font-size: 22px;}
     justify-content: flex-start !important;
     padding: 10px 20px !important;
 }
+.locationModel .countryList li button:hover{background: #f1f1f1 !important;}
+.locationModel .countryList li button.active{background: #e2e2e2 !important;}
 .locationModel .close_{
     position: absolute;
     top: 10px;
