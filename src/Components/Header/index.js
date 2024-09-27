@@ -1,11 +1,16 @@
-import Logo from '../../assets/images/logo.jpg'; // Corrected 'assests' to 'assets'
+import Logo from '../../assets/images/logo.jpg';
 import { Link } from 'react-router-dom';
 import CountryDropdown from '../CountryDropdown/index';
 import SearchBox from './SearchBox';
 import Navigation from './Navigation';
 import UserBox from './User';
+import { useContext } from 'react';
+import { MyContext } from '../../App';
 
 const Header = () => {
+
+    const context = useContext(MyContext);
+
     return (
         <div className="headerwrapper">
             <div className="top-strip bg-blue">
@@ -21,12 +26,14 @@ const Header = () => {
                     <div className="row">
                         <div className="logowrapper d-flex align-items-center col-sm-2">
                             <Link to={'/'}>
-                                <img src={Logo} alt="Logo"/>
+                                <img src={Logo} alt="Logo" />
                             </Link>
                         </div>
 
                         <div className="col-sm-10 d-flex align-items-center part2">
-                            <CountryDropdown />
+                            {
+                                context.countryList.length !== 0 && <CountryDropdown />
+                            }
                             <SearchBox />
                             <UserBox />
                         </div>

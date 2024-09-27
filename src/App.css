@@ -188,9 +188,7 @@ nav .allCatTab .icon1 svg {font-size: 20px !important;}
 nav .allCatTab .icon2 svg {font-size: 15px !important;}
 nav .navPart2 ul {margin-bottom: 0;}
 
-nav .navPart2 ul li a{
-    text-decoration: none;
-}
+nav .navPart2 ul li a{text-decoration: none;}
 
 nav .navPart2 ul li a button{
     font-size: 15px;
