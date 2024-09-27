@@ -23,6 +23,10 @@ body {
 
 .bg-blue {background: #233a95;}
 .container {max-width: 90%;}
+.headerwrapper{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
 .headerwrapper .top-strip {padding: 8px 0;}
 .headerwrapper .top-strip p {
     color: #efffff;

@@ -15,12 +15,13 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 const CountryDropdown = () => {
     const [isOpenModal, setIsOpenModal] = useState(false);
     const [selectedTab, setSelectedTab] = useState(null);
-    const [filteredCountryList, setFilteredCountryList]  = useState([]);
+    const [filteredCountryList, setFilteredCountryList] = useState([]);
     const context = useContext(MyContext);
 
-    const selectCountry = (index) => {
+    const selectCountry = (index, country) => {
         setSelectedTab(index);
         setIsOpenModal(false);
+        context.setSelectedCountry(country);
     };
 
     useEffect(() => {
@@ -30,13 +31,13 @@ const CountryDropdown = () => {
     const filterList = (e) => {
         const keyword = e.target.value.toLowerCase();
         if (keyword !== "") {
-            const filteredList = context.countryList.filter((item) => {
-                return item.country.toLowerCase().includes(keyword);
-            });
+            const filteredList = context.countryList.filter((item) => 
+                item.country.toLowerCase().includes(keyword)
+            );
             setFilteredCountryList(filteredList);
         } else {
             setFilteredCountryList(context.countryList);
-        }   
+        }
     };
 
     return (
@@ -44,7 +45,13 @@ const CountryDropdown = () => {
             <Button className='countryDrop' onClick={() => setIsOpenModal(true)}>
                 <div className='info d-flex flex-column'>
                     <span className="label">Your Location</span>
-                    <span className="name">India</span>
+                    <span className="name">
+                        {context.selectedCountry !== "" ? 
+                            context.selectedCountry.length > 10 ? 
+                                context.selectedCountry.substr(0, 10) + '...' : 
+                                context.selectedCountry 
+                            : 'Select Location'}
+                    </span>
                 </div>
                 <span className='ml-auto'><FaAngleDown /></span>
             </Button>
@@ -68,22 +75,20 @@ const CountryDropdown = () => {
                 </div>
 
                 <ul className='countryList mt-3'>
-                    {
-                        filteredCountryList?.length !== 0 && filteredCountryList?.map((item, index) => (
-                            <li key={index}>
-                                <Button
-                                    onClick={() => selectCountry(index)}
-                                    className={`${selectedTab === index ? 'active' : ''}`}
-                                >
-                                    {item.country}
-                                </Button>
-                            </li>
-                        ))
-                    }
+                    {filteredCountryList?.length !== 0 && filteredCountryList?.map((item, index) => (
+                        <li key={index}>
+                            <Button
+                                onClick={() => selectCountry(index, item.country)}
+                                className={selectedTab === index ? 'active' : ''}
+                            >
+                                {item.country}
+                            </Button>
+                        </li>
+                    ))}
                 </ul>
             </Dialog>
         </>
     );
-}
+};
 
 export default CountryDropdown;
