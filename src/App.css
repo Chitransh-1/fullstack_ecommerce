@@ -1,6 +1,12 @@
+* {margin: 0; padding: 0px;}
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
 @import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css");
+
+body {font-family: "Lato", sans-serif;font-size: 14px; color: rgba(0, 0, 0, 0.8);}
+
+.bg-blue {background: #233a95;}
 
 @media (min-width: 1300px) {
     .container,
@@ -13,16 +19,13 @@
 }
 
 .cursor{cursor: pointer;}
+.text-light{color: #3a3636 !important;}
+.text-sml{font-size: 14px;}
 
 ::-webkit-scrollbar{width: 8px !important; height: 8px !important;}
 ::-webkit-scrollbar-thumb{background: #ccc !important;}
 ::-webkit-scrollbar-track{background: transparent !important;}
 
-* {margin: 0;padding: 0;box-sizing: border-box; }
-
-body {font-family: "Lato", sans-serif;font-size: 14px;}
-
-.bg-blue {background: #233a95;}
 .container {max-width: 90%;}
 
 .headerwrapper{border-bottom: 1px solid rgba(0, 0, 0, 0.1);}
@@ -281,3 +284,54 @@ nav .navPart2 ul li:hover .submenu{opacity: 1;visibility: inherit;top: 100%;}
 
 .homeBannerSection .slick-arrow.slick-next{right: 25px !important;}
 .homeBannerSection .slick-arrow.slick-prev{left: 25px !important;}
+
+.homeProducts{padding: 25px 0px; width: 100%;}
+.homeProducts .banner{width: 100%; border-radius: 7px; overflow: hidden;}
+
+.productRow .hd{font-size: 25px; font-weight: 600;}
+
+.viewAllbtn{
+    padding: 5px 25px !important;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1) !important;
+    border-radius: 30px !important;
+    color: #000 !important;
+    font-weight: 600;
+    text-transform: capitalize !important;
+}
+.viewAllbtn svg{font-size: 20px;}
+
+.productItem {
+    width: 100%;
+    height: auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    position: relative;
+}
+
+.productItem .badge{
+    display: inline-block; 
+    padding: 7px 10px; 
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 100;
+}
+
+.productItem .info{padding: 15px;}
+.productItem h4{font-size: 15px; font-weight: 600;}
+
+.productItem .info .oldPrice{
+    font-size: 16px; 
+    font-weight: bold; 
+    color: rgba(0, 0, 0, 0.4);
+    text-decoration: line-through;
+}
+
+.productItem .info .netPrice{font-size: 16px; font-weight: bold;}
+.product_row .item{border-right: 1px solid transparent !important;}
+
+.product_row .swiper-slide:last-child .productItem{border: 1px solid rgba(0, 0, 0, 0.1) !important;}
+.swiper{padding-right: 1px !important;}
+
+.badge-primary{background: #2bbef9 !important;}
