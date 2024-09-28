@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css");
 
 @media (min-width: 1300px) {
     .container,
@@ -9,8 +11,12 @@
         max-width: 1200px;
     }
 }
-@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css");
-@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css");
+
+.cursor{cursor: pointer;}
+
+::-webkit-scrollbar{width: 8px !important; height: 8px !important;}
+::-webkit-scrollbar-thumb{background: #ccc !important;}
+::-webkit-scrollbar-track{background: transparent !important;}
 
 * {margin: 0;padding: 0;box-sizing: border-box; }
 
@@ -18,12 +24,15 @@ body {font-family: "Lato", sans-serif;font-size: 14px;}
 
 .bg-blue {background: #233a95;}
 .container {max-width: 90%;}
+
 .headerwrapper{border-bottom: 1px solid rgba(0, 0, 0, 0.1);}
+
 .headerwrapper .top-strip {padding: 8px 0;}
 .headerwrapper .top-strip p {color: #efffff;font-size: 12px;font-weight: 500;}
 
 .headerwrapper .header{width: 100%;height: auto;padding: 25px 0;}
 .logowrapper img {width: 100%;}
+
 .headerwrapper .header .part2 .countryDrop {
     width: 170px;
     height: 60px;
@@ -86,6 +95,7 @@ body {font-family: "Lato", sans-serif;font-size: 14px;}
     border-radius: 50% !important;
     color: #000 !important;
 }
+
 .headerSearch button svg {font-size: 22px;opacity: 0.8;}
 header .part3 .circle {
     display: flex;
@@ -103,6 +113,7 @@ header .part3 .circle svg {font-size: 22px;}
 .cartTab .price {font-size: 18px;color: rgba(0, 0, 0, 0.8);font-weight: 700;}
 .cartTab button {background: #fff1ee !important;}
 .cartTab button svg {color: #ea2b0f !important;}
+
 .cartTab .count {
     position: absolute;
     top: -6px;
@@ -121,6 +132,7 @@ header .part3 .circle svg {font-size: 22px;}
     overflow-y: scroll;
     overflow-x: hidden;
 }
+
 .locationModel .countryList li{width: 100%; list-style: none;}
 .locationModel .countryList li button{
     width: 100%;
@@ -129,8 +141,10 @@ header .part3 .circle svg {font-size: 22px;}
     justify-content: flex-start !important;
     padding: 10px 20px !important;
 }
+
 .locationModel .countryList li button:hover{background: #f1f1f1 !important;}
 .locationModel .countryList li button.active{background: #e2e2e2 !important;}
+
 .locationModel .close_{
     position: absolute;
     top: 10px;
@@ -158,17 +172,21 @@ nav .navPart1 .catWrapper .sideBarNav{
     visibility: hidden;
     z-index: 100;
 }
+
 nav .navPart1 .catWrapper .sideBarNav.open{height: auto; opacity: 1; visibility: inherit;}
 nav .navPart1 .catWrapper .sideBarNav ul li{width: 100%; list-style: none; padding: 0px 15px;}
+
 nav .navPart1 .catWrapper .sideBarNav ul li button{
     color: #000;
     width: 100%;
     justify-content: flex-start;
     text-transform: capitalize !important;
 }
+
 nav .navPart1 .catWrapper .sideBarNav ul li button svg{font-size: 12px; opacity: 0.8;}
 nav .navPart1 .catWrapper .sideBarNav ul li button:hover{background: transparent !important;}
 nav .navPart1 .catWrapper .sideBarNav ul li{position: static;}
+
 nav .navPart1 .catWrapper .sideBarNav ul li .submenu{
     position: absolute;
     top: 0px;
@@ -183,6 +201,7 @@ nav .navPart1 .catWrapper .sideBarNav ul li .submenu{
     border-left: 1px solid rgba(0, 0, 0, 0.1);
     padding: 20px;
 }
+
 nav .navPart1 .catWrapper .sideBarNav ul li:hover .submenu{opacity: 1; visibility: inherit; left: 100%;}
 nav .navPart1 .catWrapper .sideBarNav ul li:hover .submenu button{border-radius: 0px !important;}
 
@@ -202,6 +221,7 @@ nav .allCatTab .icon2 svg{font-size: 15px !important;}
 nav .navPart2 ul {margin-bottom: 0;}
 nav .navPart2 ul li{padding-bottom: 20px;}
 nav .navPart2 ul li a{text-decoration: none;}
+
 nav .navPart2 ul li a button{
     font-size: 15px;
     font-weight: 600;
@@ -214,9 +234,11 @@ nav .navPart2 ul li a button{
     transition: all 0.2s ease-in-out;
     border-radius: 25px;
 }
+
 nav .navPart2 ul li a svg {font-size: 20px;}
 nav .navPart2 ul li a:hover {background: #f0faff; color: #2bbef9;}
 nav .navPart2 ul li{position: relative;}
+
 nav .navPart2 ul li .submenu{
     position: absolute;
     top:  150%;
@@ -228,6 +250,7 @@ nav .navPart2 ul li .submenu{
     transition: all 0.2s ease-in-out;
     z-index: 100;
 }
+
 nav .navPart2 ul li .submenu a{display: block;width: 100%;}
 nav .navPart2 ul li .submenu a button{
     width: 100%;
@@ -236,11 +259,13 @@ nav .navPart2 ul li .submenu a button{
     text-transform: capitalize !important;
     font-weight: 600;
 }
+
 nav .navPart2 ul li .submenu a button:hover{background: #f1f1f1;}
 nav .navPart2 ul li:hover .submenu{opacity: 1;visibility: inherit;top: 100%;}
 
 .homeBannerSection{position: relative;overflow: hidden;}
 .homeBannerSection *{outline: none !important;}
+
 .homeBannerSection .slick-arrow{
     position: absolute;
     top: 45%;
@@ -253,5 +278,6 @@ nav .navPart2 ul li:hover .submenu{opacity: 1;visibility: inherit;top: 100%;}
     background: #2b2828;
     border-radius: 100%;
 }
+
 .homeBannerSection .slick-arrow.slick-next{right: 25px !important;}
 .homeBannerSection .slick-arrow.slick-prev{left: 25px !important;}
