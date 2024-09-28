@@ -3,6 +3,8 @@ import { IoIosMenu } from "react-icons/io";
 import { FaAngleDown } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import { FaAngleRight } from "react-icons/fa6";
+
 
 const Navigation = () => {
 
@@ -22,9 +24,32 @@ const Navigation = () => {
 
                             <div className={`sideBarNav shadow ${isOpenSideBarVal===true ? 'open' : ''}`}>
                                 <ul>
-                                    <li><Link to="/"><Button>Men</Button></Link></li>
-                                    <li><Link to="/"><Button>Women</Button></Link></li>
-                                    <li><Link to="/"><Button>Kids</Button></Link></li>
+                                    <li><Link to="/"><Button>Men <FaAngleRight className='ml-auto'/></Button></Link>
+                                        <div className="submenu">
+                                            <Link to="/"><Button>Clothing</Button></Link>
+                                            <Link to="/"><Button>Footwear</Button></Link>
+                                            <Link to="/"><Button>Watches</Button></Link>
+                                            <Link to="/"><Button>Fashion</Button></Link>
+                                            <Link to="/"><Button>Goggles </Button></Link>
+                                        </div>
+                                    </li>
+                                    <li><Link to="/"><Button>Women <FaAngleRight className='ml-auto'/></Button></Link>
+                                        <div className="submenu">
+                                            <Link to="/"><Button>Clothing</Button></Link>
+                                            <Link to="/"><Button>Footwear</Button></Link>
+                                            <Link to="/"><Button>Watches</Button></Link>
+                                            <Link to="/"><Button>Fashion</Button></Link>
+                                            <Link to="/"><Button>Beauty & Cosmetic</Button></Link>
+                                            <Link to="/"><Button>Goggles</Button></Link>
+                                        </div>
+                                    </li>
+                                    <li><Link to="/"><Button>Kids <FaAngleRight className='ml-auto'/></Button></Link>
+                                        <div className="submenu">
+                                            <Link to="/"><Button>Clothing</Button></Link>
+                                            <Link to="/"><Button>Footwear</Button></Link>
+                                            <Link to="/"><Button>Dry Fruits </Button></Link>
+                                        </div>
+                                    </li>
                                     <li><Link to="/"><Button>Beauty</Button></Link></li>
                                     <li><Link to="/"><Button>Watches</Button></Link></li>
                                     <li><Link to="/"><Button>Watches</Button></Link></li>
