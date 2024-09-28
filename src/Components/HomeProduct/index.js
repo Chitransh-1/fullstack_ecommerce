@@ -1,13 +1,10 @@
 import Button from '@mui/material/Button';
 import React from "react";
+import ProductItem from '../ProductItem';
 import { IoIosArrowRoundForward } from "react-icons/io";
-
-
-
-
 import 'swiper/css';
 import 'swiper/css/navigation';
-import ProductItem from '../ProductItem';
+
 
 const HomeProduct = () => {
     var productSlideroptions = {
@@ -38,6 +35,18 @@ const HomeProduct = () => {
                                 <div className="info w-75">
                                     <h3 className="mb-0 hd">BEST SELLER</h3>
                                     <p className="text-light text-sml mb-0">Do not miss the current offers until the end of March.</p>
+                                </div>
+
+                                <Button className='viewAllbtn ml-auto'>View All<IoIosArrowRoundForward/></Button>
+                            </div>
+                            <div className='product_row w-100 mt-4'>
+                                <ProductItem/>
+                            </div>
+
+                            <div className="d-flex align-items-center mt-5">
+                                <div className="info w-75">
+                                    <h3 className="mb-0 hd">NEW PRODUCTS</h3>
+                                    <p className="text-light text-sml mb-0">New products with update stocks.</p>
                                 </div>
 
                                 <Button className='viewAllbtn ml-auto'>View All<IoIosArrowRoundForward/></Button>

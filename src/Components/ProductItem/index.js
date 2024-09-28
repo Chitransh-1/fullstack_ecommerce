@@ -31,7 +31,7 @@ const ProductItem = () => {
                             <span className='badge badge-primary'>28%</span>
                             <div className='actions'>
                                 <Button><TfiFullscreen/></Button>
-                                <Button><CiHeart/></Button>
+                                <Button><CiHeart style={{fontSize:'20px'}}/></Button>
                             </div>
                         </div>
 

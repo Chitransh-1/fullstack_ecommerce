@@ -280,6 +280,7 @@ nav .navPart2 ul li:hover .submenu{opacity: 1;visibility: inherit;top: 100%;}
     height: 40px !important;
     background: #2b2828;
     border-radius: 100%;
+    font-weight: bold;
 }
 
 .homeBannerSection .slick-arrow.slick-next{right: 25px !important;}
@@ -327,11 +328,48 @@ nav .navPart2 ul li:hover .submenu{opacity: 1;visibility: inherit;top: 100%;}
     color: rgba(0, 0, 0, 0.4);
     text-decoration: line-through;
 }
-
 .productItem .info .netPrice{font-size: 16px; font-weight: bold;}
-.product_row .item{border-right: 1px solid transparent !important;}
 
+.productItem .actions{
+    position: absolute; 
+    top: 20px; 
+    right: -100%; 
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: all 0.3s ease-in-out;
+}
+.productItem .actions button{
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    min-width: 40px !important;
+    height: 40px !important;
+    width: 40px !important;
+    border: 1px solid rgba(0, 0, 0, 0.1) !important;
+    border-radius: 50% !important;
+    background: #fff !important;
+    box-shadow: 0 1px 3px rgba(0 0 0 /12%), 0 1px 2px rgba(0 0 0 /24%) !important;
+    transition: all 0.0s !important;
+}
+.productItem .actions button svg{
+    color: #000 !important; 
+    opacity: 0.7; 
+    pointer-events: none;
+    font-size: 15px;
+}
+.productItem .actions button:hover{background: #233a95 !important;}
+.productItem .actions button:hover svg{color: #fff !important;}
+
+.productItem .imgWrapper{overflow: hidden;}
+.productItem .imgWrapper img{transition: all 0.3s ease-in-out;}
+.productItem .imgWrapper:hover .actions{opacity: 1; right: 10px;}
+.productItem .imgWrapper:hover img{transform: scale(1.1);}
+
+.product_row .item{border-right: 1px solid transparent !important;}
 .product_row .swiper-slide:last-child .productItem{border: 1px solid rgba(0, 0, 0, 0.1) !important;}
+
 .swiper{padding-right: 1px !important;}
 
 .badge-primary{background: #2bbef9 !important;}
