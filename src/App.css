@@ -9,7 +9,8 @@
         max-width: 1200px;
     }
 }
-
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css");
 * {
     margin: 0;
     padding: 0;
@@ -191,6 +192,7 @@ nav .navPart1 .catWrapper .sideBarNav{
     padding: 15px 0px;
     transition: all 0.2s;
     visibility: hidden;
+    z-index: 100;
 }
 nav .navPart1 .catWrapper .sideBarNav.open{
     height: auto;
@@ -254,6 +256,7 @@ nav .navPart2 ul li .submenu{
     opacity: 0;
     visibility: hidden;
     transition: all 0.2s ease-in-out;
+    z-index: 100;
 }
 nav .navPart2 ul li .submenu a{
     display: block;
@@ -272,3 +275,23 @@ nav .navPart2 ul li:hover .submenu{
     visibility: inherit;
     top: 100%;
 }
+
+.homeBannerSection{
+    position: relative;
+    overflow: hidden;
+}
+.homeBannerSection *{outline: none !important;}
+.homeBannerSection .slick-arrow{
+    position: absolute;
+    top: 45%;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px !important;
+    height: 40px !important;
+    background: #2b2828;
+    border-radius: 100%;
+}
+.homeBannerSection .slick-arrow.slick-next{right: 25px !important;}
+.homeBannerSection .slick-arrow.slick-prev{left: 25px !important;}
