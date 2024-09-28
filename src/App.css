@@ -178,18 +178,50 @@ header .part3 .circle svg {font-size: 22px;}
 }
 .locationModel .close_ svg{font-size: 22px;}
 
+nav .navPart1 .catWrapper{position: relative;}
+nav .navPart1 .catWrapper .sideBarNav{
+    width: 80%;
+    height: 0px;
+    opacity: 0;
+    background: #fff;
+    position: absolute;
+    top: 139%;
+    left: 0px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 15px 0px;
+    transition: all 0.2s;
+    visibility: hidden;
+}
+nav .navPart1 .catWrapper .sideBarNav.open{
+    height: auto;
+    opacity: 1;
+    visibility: inherit;
+}
+nav .navPart1 .catWrapper .sideBarNav ul li{
+    width: 100%;
+    list-style: none;
+    padding: 0px 15px;
+}
+nav .navPart1 .catWrapper .sideBarNav ul li button{
+    color: #000;
+    width: 100%;
+    justify-content: flex-start;
+    text-transform: capitalize !important;
+}
+nav .navPart1 .catWrapper .sideBarNav ul li button:hover{background: transparent !important;}
+
 nav .allCatTab {
     background: #2bbef9;
     padding: 10px 15px !important;
     border-radius: 30px !important;
 }
 
-nav .allCatTab * {color: #ffffff;}
-nav .allCatTab:hover {background: #2bbef9;}
-nav .allCatTab .text {font-weight: 600;}
+nav .allCatTab *{color: #ffffff;}
+nav .allCatTab:hover{background: #2bbef9;}
+nav .allCatTab .text{font-weight: 600;}
 
-nav .allCatTab .icon1 svg {font-size: 20px !important;}
-nav .allCatTab .icon2 svg {font-size: 15px !important;}
+nav .allCatTab .icon1 svg{font-size: 20px !important;}
+nav .allCatTab .icon2 svg{font-size: 15px !important;}
 
 
 nav .navPart2 ul {margin-bottom: 0;}
