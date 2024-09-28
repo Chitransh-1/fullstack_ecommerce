@@ -16,13 +16,10 @@ function App() {
   }, []);
 
   const getCountry = async (url) => {
-    try {
-      const response = await axios.get(url);
-      setCountryList(response.data.data);
-      console.log(response.data.data);
-    } catch (error) {
-      console.error("Error fetching country data:", error);
-    }
+    const responsive = await axios.get(url).then((res)=> {
+      setCountryList(res.data.data);
+      console.log(res.data.data);
+    })
   };
 
   const values = {
