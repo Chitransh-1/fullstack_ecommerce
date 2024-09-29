@@ -1,11 +1,18 @@
 import Button from '@mui/material/Button';
+import HomeShop from '../HomeShop';
 import React from 'react';
 import ProductItem from '../ProductItem';
 import banner from '../../assets/images/banner.jpg'
+import banner1 from '../../assets/images/banner1.jpg'
+import banner3 from '../../assets/images/banner3.jpg'
+import banner4 from '../../assets/images/banner4.jpg'
+import coupon from '../../assets/images/coupon.jpg'
 import { IoIosArrowRoundForward } from 'react-icons/io';
+import { IoMailOutline } from "react-icons/io5";
 import 'swiper/css';
 import 'swiper/css/navigation';
-import HomeShop from '../HomeShop';
+
+
 
 const HomeProduct = () => {
     const productSliderOptions = {
@@ -23,19 +30,21 @@ const HomeProduct = () => {
                     <div className="row">
 
                         <div className="col-md-3">
-                            <div className="banner">
-                                <img
-                                    src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/banner-box.jpg"
-                                    alt="Banner"
-                                    className="cursor w-100"
-                                />
-                            </div>
-                            <div className="banner mt-4">
-                                <img
-                                    src={banner}
-                                    alt="Banner"
-                                    className="cursor w-100"
-                                />
+                            <div className='sticky'>
+                                <div className="banner">
+                                    <img
+                                        src={banner1}
+                                        alt="Banner1"
+                                        className="cursor w-100"
+                                    />
+                                </div>
+                                <div className="banner mt-4">
+                                    <img
+                                        src={banner}
+                                        alt="Banner2"
+                                        className="cursor w-100"
+                                    />
+                                </div>
                             </div>
                         </div>
 
@@ -70,11 +79,55 @@ const HomeProduct = () => {
                             <div className="product_row productRow2 w-100 mt-4 d-flex">
                                 <HomeShop/>
                             </div>
+
+                            <div className='d-flex mt-4 mb-5 bannerSec'>
+                                <div className='banner'>
+                                    <img
+                                        src={banner3}
+                                        alt="Banner1"
+                                        className="cursor w-100"
+                                    />
+                                </div>
+                                <div className='banner'>
+                                    <img
+                                        src={banner4}
+                                        alt="Banner1"
+                                        className="cursor w-100"
+                                    />
+                                </div>
+                            </div>
                             
                         </div>
                     </div>
                 </div>
             </section>
+
+            <section className='newsLetterSection mt-3 mb-3 d-flex align-items-center'>
+                <div className='container'>
+                    <div className='row'>
+                        <div className='col-md-6'>
+                            <p className='text-white mb-3'>#29 discount for your first oder</p>
+                            <h3 className='text-white'>Join our mewsletter and get...</h3>
+                            <p className='text-white'>Join our email subscription now to get updates on <br/> promotion and coupons</p>
+
+                            <form>
+                                <IoMailOutline/>
+                                <input type='text' placeholder='Enter your email address'/>
+                                <Button>Subscribe</Button>
+                            </form>
+                        </div>
+
+                        <div className='col-md-6'>
+                            <img 
+                                className='' 
+                                src={coupon} 
+                                alt='NewsLetterSection'
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <br/><br/><br/><br/><br/><br/>
         </>
     );
 };
