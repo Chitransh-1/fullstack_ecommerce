@@ -18,6 +18,7 @@ const HomeProduct = () => {
         <section className="homeProducts">
             <div className="container">
                 <div className="row">
+
                     <div className="col-md-3">
                         <div className="banner">
                             <img
@@ -29,39 +30,25 @@ const HomeProduct = () => {
                     </div>
 
                     <div className="col-md-9 productRow">
+
                         <div className="d-flex align-items-center">
                             <div className="info w-75">
                                 <h3 className="mb-0 hd">BEST SELLER</h3>
-                                <p className="text-light text-sml mb-0">
-                                    Do not miss the current offers until the end of March.
-                                </p>
+                                <p className="text-light text-sml mb-0"> Do not miss the current offers until the end of March.</p>
                             </div>
-
-                            <Button className="viewAllbtn ml-auto">
-                                View All <IoIosArrowRoundForward />
-                            </Button>
+                            <Button className="viewAllbtn ml-auto">View All <IoIosArrowRoundForward /></Button>
                         </div>
-
-                        <div className="product_row w-100 mt-4">
-                            <ProductItem />
-                        </div>
+                        <div className="product_row w-100 mt-4"><ProductItem /></div>
 
                         <div className="d-flex align-items-center mt-5">
                             <div className="info w-75">
                                 <h3 className="mb-0 hd">NEW PRODUCTS</h3>
-                                <p className="text-light text-sml mb-0">
-                                    New products with updated stocks.
-                                </p>
+                                <p className="text-light text-sml mb-0">New products with updated stocks.</p>
                             </div>
-
-                            <Button className="viewAllbtn ml-auto">
-                                View All <IoIosArrowRoundForward />
-                            </Button>
+                            <Button className="viewAllbtn ml-auto">View All <IoIosArrowRoundForward /></Button>
                         </div>
-
-                        <div className="product_row w-100 mt-4">
-                            <ProductItem />
-                        </div>
+                        <div className="product_row w-100 mt-4"><ProductItem /></div>
+                        
                     </div>
                 </div>
             </div>

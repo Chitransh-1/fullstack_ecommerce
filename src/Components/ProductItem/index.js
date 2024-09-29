@@ -14,9 +14,7 @@ const ProductItem = () => {
             <Swiper
                 slidesPerView={3}
                 spaceBetween={0}
-                pagination={{
-                clickable: true,
-                }}
+                pagination={{clickable: true,}}
                 modules={[Navigation]}
                 className="mySwiper"
             >             
@@ -34,7 +32,6 @@ const ProductItem = () => {
                                 <Button><CiHeart style={{fontSize:'20px'}}/></Button>
                             </div>
                         </div>
-
                         <div className='info'>
                             <h4>Italian-Style Chicken Meatballs</h4>
                             <span className='text-success d-block'>In Stock</span>
@@ -62,7 +59,6 @@ const ProductItem = () => {
                                 <Button><CiHeart/></Button>
                             </div>
                         </div>
-
                         <div className='info'>
                             <h4>Angie’s Boomchickapop Sweet & Salty Kettle Corn</h4>
                             <span className='text-success d-block'>In Stock</span>
@@ -73,7 +69,6 @@ const ProductItem = () => {
                                 <span className='netPrice text-danger ml-2 ml-3'>$18.00</span>
                             </div>
                         </div>
-                        
                     </div>
                 </SwiperSlide>
 
@@ -91,7 +86,6 @@ const ProductItem = () => {
                                 <Button><CiHeart/></Button>
                             </div>
                         </div>
-
                         <div className='info'>
                             <h4>Field Roast Chao Cheese Creamy Original</h4>
                             <span className='text-success d-block'>In Stock</span>
@@ -102,7 +96,6 @@ const ProductItem = () => {
                                 <span className='netPrice text-danger ml-2 ml-3'>$20.00</span>
                             </div>
                         </div>
-                        
                     </div>
                 </SwiperSlide>
 
@@ -120,7 +113,6 @@ const ProductItem = () => {
                                 <Button><CiHeart/></Button>
                             </div>
                         </div>
-
                         <div className='info'>
                             <h4>Blue Diamond Almonds Lightly Salted</h4>
                             <span className='text-success d-block'>In Stock</span>
@@ -148,7 +140,6 @@ const ProductItem = () => {
                                 <Button><CiHeart/></Button>
                             </div>
                         </div>
-
                         <div className='info'>
                             <h4>Foster Farms Takeout Crispy Classic Buffalo Wings</h4>
                             <span className='text-success d-block'>In Stock</span>
@@ -161,6 +152,7 @@ const ProductItem = () => {
                         </div>
                     </div>
                 </SwiperSlide>
+                
             </Swiper>
         </>
     );
