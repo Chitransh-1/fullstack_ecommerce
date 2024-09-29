@@ -289,7 +289,7 @@ nav .navPart2 ul li:hover .submenu{opacity: 1;visibility: inherit;top: 100%;}
 .homeProducts{padding: 25px 0px; width: 100%;}
 .homeProducts .banner{width: 100%; border-radius: 7px; overflow: hidden;}
 
-.productRow .hd{font-size: 25px; font-weight: 600;}
+.hd{font-size: 25px; font-weight: 600; text-transform: uppercase;}
 
 .viewAllbtn{
     padding: 5px 25px !important;
@@ -369,11 +369,46 @@ nav .navPart2 ul li:hover .submenu{opacity: 1;visibility: inherit;top: 100%;}
 
 .product_row .item{border-right: 1px solid transparent !important;}
 .product_row .swiper-slide:last-child .productItem{border: 1px solid rgba(0, 0, 0, 0.1) !important;}
+.product_row .swiper-button-prev, .product_row .swiper-button-next {
+    top: 180px !important;
+    width: 50px !important;
+    height: 50px !important;
+    background: #998f8f !important;
+    border-radius: 50% !important;
+    color: #0e0101 !important;
+}
+.product_row .swiper-button-prev::after, 
+.product_row .swiper-button-next::after {
+    font-size: 38px !important;
+}
 
 .swiper{padding-right: 1px !important;}
 
 .badge-primary{background: #2bbef9 !important;}
 
-.homeCat{padding: 35px 0px;}
-.homeCat .swiper .item{padding: 15px; width: 100%; height: auto; background: #feefea;}
-.homeCat .swiper .item .img{width: 88%;}
+.homeCat {
+    padding: 35px 0;
+}
+
+.homeCat .swiper-button-prev, .homeCat .swiper-button-next {
+    top: 30px !important;
+    width: 30px !important;
+    height: 30px !important;
+    background: #998f8f !important;
+    border-radius: 50% !important;
+    color: #0e0101 !important;
+}
+
+.homeCat .swiper .item {
+    padding: 15px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+
+.homeCat .swiper-button-prev::after, 
+.homeCat .swiper-button-next::after {
+    font-size: 14px !important;
+}

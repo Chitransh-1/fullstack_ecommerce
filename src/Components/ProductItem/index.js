@@ -12,7 +12,7 @@ const ProductItem = () => {
     return (
         <>
             <Swiper
-                slidesPerView={4}
+                slidesPerView={5}
                 spaceBetween={0}
                 navigation={true}
                 slidesPerGroup={3}
@@ -104,6 +104,33 @@ const ProductItem = () => {
                     <div className='item productItem'>
                         <div className='imgWrapper'>
                             <img
+                                src='https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-62-346x310.jpg'
+                                alt='Italian-Style Chicken Meatballs'
+                                className='w-100'
+                            />
+                            <span className='badge badge-primary'>28%</span>
+                            <div className='actions'>
+                                <Button><TfiFullscreen/></Button>
+                                <Button><CiHeart style={{fontSize:'20px'}}/></Button>
+                            </div>
+                        </div>
+                        <div className='info'>
+                            <h4>Italian-Style Chicken Meatballs</h4>
+                            <span className='text-success d-block'>In Stock</span>
+                            <Rating className="mt-2 mb-2" name="read-only" value={4} readOnly size="small" />
+
+                            <div className='d-flex'>
+                                <span className='oldPrice'>$15.00</span>
+                                <span className='netPrice text-danger ml-2 ml-3'>$10.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                    <div className='item productItem'>
+                        <div className='imgWrapper'>
+                            <img
                                 src='https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-59-346x310.jpg'
                                 alt='Blue Diamond Almonds Lightly Salted'
                                 className='w-100'
@@ -121,7 +148,7 @@ const ProductItem = () => {
 
                             <div className='d-flex'>
                                 <span className='oldPrice'>$19.00</span>
-                                <span className='netPrice text-danger ml-2 ml-3'>15.00</span>
+                                <span className='netPrice text-danger ml-2 ml-3'>$15.00</span>
                             </div>
                         </div>
                     </div>
@@ -149,6 +176,33 @@ const ProductItem = () => {
                             <div className='d-flex'>
                                 <span className='oldPrice'>$20.00</span>
                                 <span className='netPrice text-danger ml-2 ml-3'>$14.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                    <div className='item productItem'>
+                        <div className='imgWrapper'>
+                            <img
+                                src='https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-59-346x310.jpg'
+                                alt='Blue Diamond Almonds Lightly Salted'
+                                className='w-100'
+                            />
+                            <span className='badge badge-primary'>28%</span>
+                            <div className='actions'>
+                                <Button><TfiFullscreen/></Button>
+                                <Button><CiHeart/></Button>
+                            </div>
+                        </div>
+                        <div className='info'>
+                            <h4>Blue Diamond Almonds Lightly Salted</h4>
+                            <span className='text-success d-block'>In Stock</span>
+                            <Rating className="mt-2 mb-2" name="read-only" value={4} readOnly size="small" />
+
+                            <div className='d-flex'>
+                                <span className='oldPrice'>$19.00</span>
+                                <span className='netPrice text-danger ml-2 ml-3'>$15.00</span>
                             </div>
                         </div>
                     </div>
