@@ -373,3 +373,7 @@ nav .navPart2 ul li:hover .submenu{opacity: 1;visibility: inherit;top: 100%;}
 .swiper{padding-right: 1px !important;}
 
 .badge-primary{background: #2bbef9 !important;}
+
+.homeCat{padding: 35px 0px;}
+.homeCat .swiper .item{padding: 15px; width: 100%; height: auto; background: #feefea;}
+.homeCat .swiper .item .img{width: 88%;}

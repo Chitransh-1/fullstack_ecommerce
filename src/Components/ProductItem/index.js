@@ -12,9 +12,10 @@ const ProductItem = () => {
     return (
         <>
             <Swiper
-                slidesPerView={3}
+                slidesPerView={4}
                 spaceBetween={0}
-                pagination={{clickable: true,}}
+                navigation={true}
+                slidesPerGroup={3}
                 modules={[Navigation]}
                 className="mySwiper"
             >             

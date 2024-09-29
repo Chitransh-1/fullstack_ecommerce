@@ -6,8 +6,8 @@ const Home = () => {
     return(
         <>
             <HomeBanner/>
-            <HomeProduct/>
             <HomeCat/>
+            <HomeProduct/>
         </>
     );
 }
