@@ -383,12 +383,8 @@ nav .navPart2 ul li:hover .submenu{opacity: 1;visibility: inherit;top: 100%;}
 }
 
 .swiper{padding-right: 1px !important;}
-
 .badge-primary{background: #2bbef9 !important;}
-
-.homeCat {
-    padding: 35px 0;
-}
+.homeCat {padding: 35px 0;}
 
 .homeCat .swiper-button-prev, .homeCat .swiper-button-next {
     top: 30px !important;
@@ -406,9 +402,6 @@ nav .navPart2 ul li:hover .submenu{opacity: 1;visibility: inherit;top: 100%;}
     border-radius: 10px;
 }
 
+.homeCat .swiper-button-prev::after, .homeCat .swiper-button-next::after {font-size: 14px !important;}
 
-
-.homeCat .swiper-button-prev::after, 
-.homeCat .swiper-button-next::after {
-    font-size: 14px !important;
-}
+.product1{border-right: 1px solid rgba(0, 0, 0, 0.4); overflow: hidden;}

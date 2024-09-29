@@ -5,6 +5,7 @@ import banner from '../../assets/images/banner.jpg'
 import { IoIosArrowRoundForward } from 'react-icons/io';
 import 'swiper/css';
 import 'swiper/css/navigation';
+import HomeShop from '../HomeShop';
 
 const HomeProduct = () => {
     const productSliderOptions = {
@@ -57,6 +58,18 @@ const HomeProduct = () => {
                                 <Button className="viewAllbtn ml-auto">View All <IoIosArrowRoundForward /></Button>
                             </div>
                             <div className="product_row w-100 mt-4"><ProductItem /></div>
+
+                            <div className="d-flex align-items-center mt-5">
+                                <div className="info w-75">
+                                    <h3 className="mb-0 hd">NEW PRODUCTS</h3>
+                                    <p className="text-light text-sml mb-0">New products with updated stocks.</p>
+                                </div>
+                                <Button className="viewAllbtn ml-auto">View All <IoIosArrowRoundForward /></Button>
+                            </div>
+
+                            <div className="product_row productRow2 w-100 mt-4 d-flex">
+                                <HomeShop/>
+                            </div>
                             
                         </div>
                     </div>
